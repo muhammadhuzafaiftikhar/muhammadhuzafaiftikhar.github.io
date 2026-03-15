@@ -1,0 +1,115 @@
+/* ── Hero character animation ── */
+@keyframes charReveal {
+  from {
+    transform: translateY(110%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.hero__name .char {
+  display: inline-block;
+  animation: charReveal 0.8s var(--ease-out-expo) both;
+}
+
+.hero__name .char-space {
+  display: inline-block;
+  width: 0.3em;
+}
+
+/* ── Hero annotation fade ── */
+@keyframes annotationFade {
+  from {
+    opacity: 0;
+    transform: rotate(-2.3deg) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(-2.3deg) translateY(0);
+  }
+}
+
+.hero__annotation.animated {
+  animation: annotationFade 0.6s var(--ease-out-expo) 1.4s both;
+}
+
+/* ── Skills ticker ── */
+@keyframes tickerLeft {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes tickerRight {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+.skills__track--left {
+  animation: tickerLeft 35s linear infinite;
+}
+
+.skills__track--right {
+  animation: tickerRight 45s linear infinite;
+}
+
+.skills__track:hover {
+  animation-play-state: paused;
+}
+
+/* ── SVG line draw ── */
+@keyframes lineDraw {
+  from { stroke-dashoffset: 1000; }
+  to { stroke-dashoffset: 0; }
+}
+
+.svg-divider.visible line {
+  stroke-dasharray: 1000;
+  animation: lineDraw 2s var(--ease-in-out) forwards;
+}
+
+/* ── Pulse for scroll indicator ── */
+@keyframes gentlePulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+.scroll-indicator {
+  animation: gentlePulse 3s ease-in-out infinite;
+}
+
+/* ── Card enter animations ── */
+.card-enter {
+  opacity: 0;
+  transform: translateY(30px) scale(0.97);
+  transition: opacity 0.6s ease,
+              transform 0.7s var(--ease-out-expo);
+}
+
+.card-enter.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Vary entrance per card type */
+.card--cinema.card-enter {
+  transform: translateY(40px) scale(0.95);
+}
+
+.card--showcase.card-enter {
+  transform: translateY(20px) scale(0.98);
+}
+
+.card--casestudy.card-enter {
+  transform: translateY(25px);
+}
+
+.card--feature.card-enter {
+  transform: scale(0.92) rotate(-1deg);
+}
+
+.card--feature.card-enter.visible {
+  transform: scale(1) rotate(0deg);
+}

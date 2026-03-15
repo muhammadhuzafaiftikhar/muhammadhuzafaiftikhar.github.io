@@ -1,0 +1,35 @@
+:root {
+  /* Forge & Ember palette */
+  --bg: #1A1714;
+  --surface: #252017;
+  --elevated: #2F2A21;
+  --accent: #E8634A;
+  --accent-gold: #D4A24C;
+  --accent-terra: #C4856A;
+  --text: #F0EAE0;
+  --text-secondary: #A89B8C;
+  --hot-ember: #FF4D2E;
+
+  /* Typography */
+  --font-heading: 'Instrument Serif', Georgia, serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+  --font-handwritten: 'Caveat', cursive;
+
+  /* Spacing (intentionally varied) */
+  --section-pad-top: clamp(5rem, 12vh, 9rem);
+  --section-pad-bottom: clamp(4rem, 10vh, 7rem);
+  --container-width: min(1280px, 90vw);
+  --container-narrow: min(960px, 88vw);
+
+  /* Transitions */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  /* Z-index scale */
+  --z-cursor: 9999;
+  --z-nav: 100;
+  --z-overlay: 50;
+  --z-content: 10;
+  --z-bg: 1;
+}
