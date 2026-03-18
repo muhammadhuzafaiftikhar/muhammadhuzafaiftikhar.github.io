@@ -69,11 +69,35 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: stretch;
   padding-left: 6vw;
-  padding-right: 4vw;
+  padding-right: 6vw;
   position: relative;
   overflow: hidden;
+}
+
+.hero__content {
+  display: flex;
+  align-items: center;
+  gap: clamp(3rem, 6vw, 8rem);
+  position: relative;
+  z-index: var(--z-content);
+}
+
+.hero__left {
+  flex: 1 1 60%;
+}
+
+.hero__right {
+  flex: 0 0 auto;
+}
+
+.hero__bio {
+  font-size: clamp(0.9rem, 1.1vw, 1.05rem);
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 55ch;
+  margin-top: 1.25rem;
 }
 
 .hero__bg {
@@ -195,74 +219,24 @@
 }
 
 .hero__annotation {
-  position: relative;
-  z-index: var(--z-content);
   font-family: var(--font-handwritten);
   color: var(--accent-gold);
-  font-size: clamp(1rem, 1.8vw, 1.3rem);
-  transform: rotate(-2.3deg);
-  margin-top: 0.75rem;
-  margin-left: 2rem;
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  transform: rotate(-1.5deg);
+  margin-top: 1rem;
+  margin-left: 0.5rem;
   opacity: 0;
 }
 
-/* ── About ── */
-.about {
-  padding-top: var(--section-pad-top);
-  padding-bottom: calc(var(--section-pad-bottom) + 2rem);
-}
-
-.about__grid {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: clamp(2rem, 5vw, 5rem);
-  align-items: start;
-}
-
-.about__photo {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 2px solid var(--accent-gold);
-  margin-bottom: 1.5rem;
-  filter: grayscale(0.2);
-  transition: filter 0.4s;
-}
-
-.about__photo:hover {
-  filter: grayscale(0);
-}
-
-.about__bio {
-  padding-top: 1rem;
-}
-
-.about__bio p + p {
-  margin-top: 1rem;
-}
-
-.about__stats {
-  position: relative;
+/* Hero stats */
+.hero__stats {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  padding: 2.5rem;
+  gap: 2.5rem;
+  padding: 2rem 0;
 }
 
-/* Subtle warm glow behind stats */
-.about__stats::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: -20%;
-  width: 70%;
-  height: 120%;
-  transform: translateY(-50%);
-  background: radial-gradient(ellipse at center, rgba(232, 99, 74, 0.06) 0%, transparent 70%);
-  pointer-events: none;
-  z-index: 0;
-}
+/* Stat styles (used in hero) */
 
 .stat {
   position: relative;

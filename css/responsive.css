@@ -30,16 +30,16 @@
     padding-right: 5vw;
   }
 
-  .about__grid {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
+  .hero__content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
   }
 
-  .about__stats {
+  .hero__stats {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 2rem;
-    padding: 1.5rem 0;
   }
 
   .timeline {
@@ -165,9 +165,18 @@
     padding: 1.25rem 1.35rem;
   }
 
-  .about__stats {
+  .hero__content {
     flex-direction: column;
     gap: 1.5rem;
+  }
+
+  .hero__stats {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .hero__bio {
+    font-size: 0.9rem;
   }
 
   .contact__links {
