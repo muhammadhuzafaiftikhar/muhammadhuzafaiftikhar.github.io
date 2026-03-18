@@ -13,7 +13,7 @@
   /* Typography */
   --font-heading: 'Poppins', -apple-system, sans-serif;
   --font-body: 'Poppins', -apple-system, sans-serif;
-  --font-handwritten: 'Caveat', cursive;
+  --font-handwritten: 'Poppins', -apple-system, sans-serif;
 
   /* Spacing (intentionally varied) */
   --section-pad-top: clamp(5rem, 12vh, 9rem);
