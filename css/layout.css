@@ -259,7 +259,7 @@
 .stat__annotation {
   font-family: var(--font-handwritten);
   color: var(--accent-gold);
-  font-size: 1rem;
+  font-size: 1.4rem;
   transform: rotate(-1.7deg);
   margin-top: 0.25rem;
   display: inline-block;
