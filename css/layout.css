@@ -93,7 +93,7 @@
 }
 
 .hero__bio {
-  font-size: clamp(0.9rem, 1.1vw, 1.05rem);
+  font-size: clamp(1rem, 1.3vw, 1.15rem);
   color: var(--text-secondary);
   line-height: 1.7;
   max-width: 55ch;
@@ -214,14 +214,14 @@
   position: relative;
   z-index: var(--z-content);
   margin-top: 0.5rem;
-  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  font-size: clamp(1.4rem, 2.8vw, 2rem);
   color: var(--text-secondary);
 }
 
 .hero__annotation {
   font-family: var(--font-handwritten);
   color: var(--accent-gold);
-  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  font-size: clamp(1.2rem, 2.2vw, 1.5rem);
   transform: rotate(-1.5deg);
   margin-top: 1rem;
   margin-left: 0.5rem;
