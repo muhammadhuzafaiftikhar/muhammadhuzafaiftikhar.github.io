@@ -11,7 +11,7 @@
   --hot-ember: #FF4D2E;
 
   /* Typography */
-  --font-heading: 'Instrument Serif', Georgia, serif;
+  --font-heading: 'Poppins', -apple-system, sans-serif;
   --font-body: 'Poppins', -apple-system, sans-serif;
   --font-handwritten: 'Caveat', cursive;
 
