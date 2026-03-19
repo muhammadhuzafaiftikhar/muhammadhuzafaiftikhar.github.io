@@ -92,6 +92,21 @@
   flex: 0 0 auto;
 }
 
+.hero__photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--accent-gold);
+  margin-bottom: 1.25rem;
+  filter: grayscale(0.2);
+  transition: filter 0.4s;
+}
+
+.hero__photo:hover {
+  filter: grayscale(0);
+}
+
 .hero__bio {
   font-size: clamp(1rem, 1.3vw, 1.15rem);
   color: var(--text-secondary);
